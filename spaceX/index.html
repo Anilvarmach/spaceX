@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sopce X</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAv BAR -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#home"
+        ><i class="fas fa-satellite-dish nav-image"></i>Space<span
+          class="nav-text"
+          >X</span
+        ></a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#crew">Crew Members</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#latest">Latest Launches</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HEAD SECTION -->
+    <section id="home">
+      <img src="./images/hero .jpg" class="img-fluid" alt="Responsive image" />
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <div class="row heading">
+        <h1>About Us</h1>
+      </div>
+      <div class="card mb-3">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img
+              src="./images/ElonMusk.jfif"
+              class="card-img founder-img"
+              alt="ElonMusk - FOunder and CEO Image"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title" id="Title"></h5>
+              <p class="card-text" id="summary"></p>
+              <p class="card-text">
+                <span>Founder: </span><span id="founder-name"></span>
+              </p>
+              <p class="card-text">
+                <span>Founded Year: </span><span id="founded-year"></span>
+              </p>
+              <p class="card-text" id="link">
+                <a
+                  id="website-link"
+                  target="_blank"
+                  class="btn btn-outline-dark"
+                  rel="noopener noreferrer"
+                  >More About Us
+                  <i class="fas fa-arrow-circle-right link-icon"></i
+                ></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Latest Launches -->
+    <section id="latest">
+      <div class="row heading">
+        <h1>Latest Launches</h1>
+      </div>
+      <div class="card latest-card mb-3">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img
+              src="./images/OvSAk3K.png"
+              class="card-img founder-img"
+              alt="Image"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title" id="Title-latest"></h5>
+              <p class="card-text" id="date"></p>
+              <p class="card-text" id="summary-latest"></p>
+              <p class="card-text" id="link">
+                <a
+                  id="article-link"
+                  target="_blank"
+                  class="btn btn-outline-dark"
+                  rel="noopener noreferrer"
+                  ><i class="far fa-newspaper link-icon"></i>ARTICLA</a
+                >
+                <a
+                  id="youtube-link"
+                  target="_blank"
+                  class="btn btn-outline-dark"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-youtube link-icon"></i> YOUTUBE</a
+                >
+                <a
+                  id="wikipedia-link"
+                  target="_blank"
+                  class="btn btn-outline-dark"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-wikipedia-w link-icon"></i>WIKIPEDIA</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CREW MEMBERS SECTIONS -->
+    <section id="crew">
+      <div class="row heading">
+        <h1>CREW MEMBERS</h1>
+      </div>
+      <div class="row" id="crew-team"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="row heading">
+        <h1>CONTACT</h1>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <address>
+            <h3>Headquarters</h3>
+            <p id="address"></p>
+            <p id="city"></p>
+            <p id="state"></p>
+          </address>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-12">
+          <div class="card-deck">
+            <div class="card employee">
+              <img src="./images/ceo.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title employee-name">Elon Musk</h5>
+                <p class="card-text employee-des">CEO</p>
+              </div>
+            </div>
+            <div class="card employee">
+              <img src="./images/cto.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title employee-name">Gwynne Shotwell</h5>
+                <p class="card-text employee-des">CTO</p>
+              </div>
+            </div>
+            <div class="card employee">
+              <img src="./images/coo.jfif" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title employee-name">Tom Mueller</h5>
+                <p class="card-text employee-des">COO</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
